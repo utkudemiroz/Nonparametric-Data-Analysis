@@ -42,7 +42,7 @@ spearman = cor(wkly_sales.str1, wkly_sales.str2, method = c('spearman'))
 kendall = cor(wkly_sales.str1, wkly_sales.str2, method = c('kendall'))
 
 #Bootstrapping
-sim=1000
+sim=10000
 size=250
 boot_result <- lapply(1:sim, function(i, X=wkly_sales.str1, Y=wkly_sales.str2, size) 
   {
