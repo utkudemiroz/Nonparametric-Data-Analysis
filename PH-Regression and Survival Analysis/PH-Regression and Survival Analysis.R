@@ -18,7 +18,7 @@ plot(bladder$size,bladder$stop,
 
 
 #i) Bootstrap
-B = 3000
+B = 10000
 median <- c()
 beta <- c()
 for (n in 1:B) {
